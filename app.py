@@ -63,7 +63,7 @@ ALL_STRATEGY_NAMES = list(STRATEGIES.keys()) + ["Combined (AND)"]
 
 # ── Page config ───────────────────────────────────────────────────────────────
 st.set_page_config(
-    page_title="Backtesting Dashboard",
+    page_title="Trading Backtesting",
     page_icon="📈",
     layout="wide",
     initial_sidebar_state="expanded",
@@ -71,7 +71,7 @@ st.set_page_config(
 
 # ── Sidebar ───────────────────────────────────────────────────────────────────
 with st.sidebar:
-    st.title("📈 Backtesting")
+    st.title("📈 Trading Backtesting")
     st.divider()
 
     ticker = st.text_input("Ticker Symbol", value="AAPL", placeholder="e.g. AAPL, TSLA, SPY").strip().upper()
